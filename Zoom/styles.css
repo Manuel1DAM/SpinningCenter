@@ -1,0 +1,29 @@
+/* ESTILO DEL H1 */
+h1{
+  text-align: center;
+}
+/* ESTILO DE LA IMAGEN DEL CALENDARIO */
+img{
+  width: 500px; 
+  height: 500px;
+}
+/* ESTILO DE LOS DIV QUE HEREDAN DEL .img-zoom-container */
+.img-zoom-container > div{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 50px;
+}
+/* ESTILO DE LA LUPA/ZOOM */
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  width: 100px;
+  height: 100px;
+}
+/* ESTILO DEL RESULTADO DE LA LUPA */
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 500px;
+  height: 500px;
+}

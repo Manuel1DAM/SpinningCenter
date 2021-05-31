@@ -1,0 +1,538 @@
+/* ESTILO CONTENEDOR */
+  main {
+    margin: 0 auto;
+      max-width: 100%;
+      min-height: 100vh;
+      padding: 5px;
+      display: grid;
+      grid-template-areas: 
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-aside my-section2 my-section2"
+      "my-aside my-section3 my-section3"
+      "my-aside my-section4 my-section4"
+      "my-footer my-footer my-footer";
+      background-color: darkslategrey;
+      padding: 0.7%;
+  }
+
+/* ASIGNACIÓN DE NOMBRES A LAS ETIQUETAS */
+  header {
+    grid-area: my-header;
+  }
+  
+  nav {
+    grid-area: my-nav;
+  }
+  
+  aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+  }
+  
+  section {
+    grid-area: my-section;
+  }
+
+  section.main2 {
+    grid-area: my-section2;
+  }
+
+  section.main3 {
+    grid-area: my-section3;
+  }
+
+  section.main4 {
+    grid-area: my-section4;
+  }
+  
+  footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+  }
+  /* Movil */
+  @media (max-width: 480px) {
+    main {
+      grid-template-areas: 
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-aside my-aside"
+      "my-section my-section my-section"
+      "my-section2 my-section2 my-section2"
+      "my-section3 my-section3 my-section3"
+      "my-section4 my-section4 my-section4"
+      "my-footer my-footer my-footer"
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 480px) and (max-width: 768px) {
+    main {
+      grid-template-areas: 
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-section my-section my-section"
+      "my-section2 my-section2 my-aside"
+      "my-section3 my-section3 my-aside"
+      "my-section4 my-section4 my-aside"
+      "my-footer my-footer my-footer"
+    }
+  }
+  
+  /* Ordenador */
+  @media (min-width: 768px) {
+    main {
+      grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-aside my-section2 my-section2"
+      "my-aside my-section3 my-section3"
+      "my-aside my-section4 my-section4"
+      "my-footer my-footer my-footer"
+    }
+  }
+
+/* COMIENDO DEL HEADER */
+  main header {
+    display: block;
+    background-color: silver;
+    background-image: url('img/fondoCabeceraHeader.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+  }
+  main header > div{
+    display: inline-block;
+  }
+  /* LOGO */
+  main header div.logo {
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 25%;
+  }
+  main header div.logo img{
+    width: 100px;
+    height: 100px;
+  }
+  /* NOMBRE EMPRESA */
+  main header .nombreEmpresa{
+    width: 45%;
+  }
+  main header .nombreEmpresa h1{
+    color: white ;
+    font-style: oblique;
+    text-align: center;
+    font-size: 40px;
+  }
+  main header .nombreEmpresa span.letra2{
+    color: lightslategray;
+    font-style: oblique;
+    text-align: center;
+    font-size: 40px;
+  }
+  main header .nombreEmpresa span.letra{
+    color: teal;
+    font-style: italic;
+    margin-left: 80px;
+  }
+/* FIN HEADER */
+
+/* COMIENZO DEL NAV */
+
+  /* ESTILOS NAV */
+  main nav  {
+    background-image: url('img/fondoNavegador.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 70px;
+    padding: 20px;
+    margin: 10px 0px;
+  }
+  /* ESTILOS DIV */
+  main nav > div{
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 auto;
+  }
+  main nav div.marcado {
+    background-color: salmon;
+  }
+  /*ESTILOS DIV INFORMACION INTERNA */
+  main nav div:hover{
+    background-color: darksalmon;
+    font-style: oblique;
+    font-weight: bold;
+    
+  }
+  main nav div a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+/* FIN DEL NAV */
+
+/* COMIENZO DEL ASIDE */
+
+  /* ESTILOS NAV */
+  main aside {
+    background-image: url('img/fondoAside.jpg');
+    color: white;
+    margin: 10px 0px;
+  }
+  /*ESTILOS DIV */
+  main aside .apartado div {
+    padding: 10px;
+  }
+  main aside .apartado div:hover {
+    background-color: gray;
+  }
+  /* ESTILOS DIV INTERNOS */
+  main aside .apartado a {
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  /* ESTILO RELOJ */
+  main aside .apartado div form p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.7px black;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  main aside .apartado div form input{
+    width: 100%;
+    text-align: center;
+  }
+/* FIN DEL ASIDE */
+
+/* COMIENZO DEL SECTION */
+
+  /* Estilo Container */
+  main .container{
+    margin: 10px auto;
+    background-color: white;
+    width: 1080px;
+    padding: 30px;
+  }
+  /* Estilo h2 */
+  main section h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    -webkit-text-stroke: 0.7px black;
+  }
+  /* Estilo Ul y Li */
+  main ul, li {
+	  padding: 0;
+	  margin: 0;
+	  list-style: none;
+  }
+  
+  main ul.slider{
+	position: relative;
+	width: 800px;
+	height: 500px;
+  }
+  
+  main ul.slider li {
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  opacity: 0;
+	  width: inherit;
+	  height: inherit;
+	  transition: opacity .5s;
+	  background:#fff;
+  }
+  /* Estilo slider interno imagenes */
+  main ul.slider li img{
+  width: 800px;
+  margin: 0px 150px;
+	height: 500px;
+	object-fit: cover;
+  }
+  main ul.slider li#slide5{
+    margin: 0px 150px;
+  }
+  main ul.slider li:first-child {
+	  opacity: 1; /*Mostramos el primer li */
+  }
+  
+  main ul.slider li:target {
+	  opacity: 1; /*Mostramos el li del enlace que pulsemos*/
+  }
+  /* Estilo menu */
+  main .menu{
+	text-align: center;
+	margin: 20px;
+  }
+  
+  main .menu li{
+	display: inline-block;
+	text-align: center;
+  }
+  main .menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: grey;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+  }
+  /* Estilo parrafo final */
+  main section ul p.textoSlider{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+  }
+  main section ul p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+  }
+  main section ul a.registro{
+    font-size: 20px;
+    margin-left: 150px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+  }
+/* FIN DEL SECTION */
+
+/* COMIENZO DEL SECTION MAIN2 */
+  /* Estilo sectionMain2 */
+  main section.main2{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 10px 20px;
+  }
+  /* Estilo H4 */
+  main section.main2 h4{
+    color: lightslategrey;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: inherit;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    text-decoration-style: double;
+    font-size: 30px;
+  }
+  /* Estilo imagen */
+  main section.main2 img{
+    width: 1100px;
+    height: 700px;
+  }
+
+/* FIN DEL SECTION MAIN2 */
+
+/* COMIENZO DEL SECTION MAIN3 */
+  /* Estilo sectionMain3 */
+  main section.main3{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 10px 20px;
+  }
+  /* Estilo Tarjeta div*/
+  main section.main3 div {
+    display: block;
+  }
+  /* Estilo tarjeta */
+  main section.main3 .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    position: relative;
+    margin-top: 40px;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 5%;
+    background-color: teal;
+  }
+  /* Estilo Nombre h4 */
+  main section.main3 .card h4 {
+    font-family: Courier New;
+    text-align: center;
+  }
+  /* Estilo efecto de transiccion para las tarjetas */
+  main section.main3 .card .front, .back {
+    border-radius: 0;
+    width: 100%;
+    position: absolute;
+    transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    text-align: left;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inherit;
+    height: 345px;
+    z-index: 2;
+  }
+  /* Estilo para el front */
+  main section.main3 .card .front h4{
+    margin: -60px 0px;
+  }
+  main section.main3 .card .front p{
+    margin: -90px 0px;
+  }
+  /* Estilo para que lo de delante se quede delante del .back */
+  main section.main3 .card .back {
+    border-radius: 0;
+    z-index: 1;
+  }
+  /* Estilo parrafos de las tarjetas */
+  main section.main3 .card  p {
+    font-family: Arial Narrow;
+    font-size: 16px;
+    padding: 0 28px;
+  }
+  /* Estilo imagen para que se quede delante del div.back */
+  main section.main3 .imagen1 {
+    z-index: 2;
+    height: 320px;
+  }
+  /* Estilo para darle a la imagen de la persona */
+  main section.main3 .imagen2{
+    z-index: 3;
+    width: 280px;
+    height: 280px;
+    margin-left: 25px;
+    margin-top: -300px;
+    margin-bottom: 150px;
+  }
+  /* Efectos rotacion tarjeta */
+  main section.main3 .card:hover div.front {
+    transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    
+  }
+  main section.main3 .card:hover div {
+    background-color: wheat;
+  }
+  /* Final Tarjetas*/
+
+/* FIN DEL SECTION MAIN3 */
+
+/* COMIENZO DEL SECTION MAIN4 */
+  main section.main4{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 10px 20px;
+  }
+  main section.main4 div.bloque{
+    display: block;
+  }
+  main section h2.texto{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+  }
+  main section.main4 div.bloque > div{
+    display: inline-block;
+    margin: 0px 120px;
+    padding: 1%;
+  }
+  main section.main4 div.bloque  div input{
+    font-size: 35px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    height: 60px;
+  }
+  main section.main4 div.bloque  div > input:hover {
+    background-color: midnightblue;
+    font-size: 37px;
+  }
+
+  main section.main4 .button:active {
+    background-color: royalblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+/* FIN DEL SECTION MAIN4 */
+
+/* COMIENZO DEL FOOTER */
+
+  /* Estilos FOOTER */
+  main footer {
+    background-color: black;
+    margin: 10px 0px;
+    background-image: url('img/fondoCabeceraHeader.jpg');
+    background-repeat: no-repeat;
+  }
+  /* Estilos Div */
+  main footer div{
+    margin: auto 500px;
+  }
+  /* Estilos Ul */
+  main footer ul{
+    color: white;
+    list-style:none;
+    margin: 1.5%;
+    text-align: left;
+    font-size: 20px;
+  }
+  main footer ul li{
+    line-height: 30px;
+  }
+  main footer ul li ul li > a {
+    text-decoration: none;
+    color: cornflowerblue
+  }
+  main footer ul li ul > li a:hover {
+    text-decoration: none;
+    color: darkcyan;
+  }
+  main footer ul li ul li a {
+    margin: 0pc 10px;
+  }
+  main footer ul li ul img {
+    text-align: right;
+    width: 30px;
+    height: 20px;
+    margin: 0px 10px;
+  }
+
+/* FIN DEL FOOTER */

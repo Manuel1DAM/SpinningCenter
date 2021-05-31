@@ -1,0 +1,267 @@
+/* ESTILO CONTENEDOR */
+
+  main {
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 95vh;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-aside my-section my-section"
+    "my-aside my-section2 my-section2"
+    "my-aside my-section3 my-section3"
+    "my-aside my-section4 my-section4"
+    "my-footer my-footer my-footer";
+    background-color: darkslategrey;
+    padding: 0.7%;
+    border: 3px solid black;
+  }
+
+/* ASIGNACIÓN DE NOMBRES A LAS ETIQUETAS */
+
+  header {
+  grid-area: my-header;
+  }
+
+  nav {
+  grid-area: my-nav;
+  }
+
+  aside {
+  grid-area: my-aside;
+  background-color: darkmagenta;
+  }
+
+  section {
+  grid-area: my-section;
+  }
+
+  section.main2 {
+  grid-area: my-section2;
+  }
+
+  section.main3 {
+  grid-area: my-section3;
+  }
+
+  section.main4 {
+  grid-area: my-section4;
+  }
+
+  footer {
+  grid-area: my-footer;
+  background-color: darkorchid;
+  }
+  /* Movil */
+  @media (max-width: 480px) {
+  main {
+    grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-aside my-aside my-aside"
+    "my-section2 my-section2 my-section2"
+    "my-section3 my-section3 my-section3"
+    "my-section4 my-section4 my-section4"
+    "my-footer my-footer my-footer"
+  }
+  }
+
+  /* Tablet */
+  @media (min-width: 480px) and (max-width: 768px) {
+  main {
+    grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section2 my-section2 my-aside"
+    "my-section3 my-section3 my-aside"
+    "my-section4 my-section4 my-aside"
+    "my-footer my-footer my-footer"
+  }
+  }
+
+  /* Ordenador */
+  @media (min-width: 768px) {
+  main {
+    grid-template-areas:
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-aside my-section my-section"
+    "my-aside my-section2 my-section2"
+    "my-aside my-section3 my-section3"
+    "my-aside my-section4 my-section4"
+    "my-footer my-footer my-footer"
+    }
+  }
+  /* Estilos de los Divs */
+  main{
+    display: block;
+    margin: 0px 100px;
+  }
+
+/* COMIENZO DEL HEADER */
+
+  main header{
+    display: inline-block;
+    background-color: lightslategrey;
+    padding: 1%;
+    margin-left: 250px;
+  }
+  /* Estilo del h2 */
+  main header h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px 70px;
+    color: black;
+    font-size: 30px;
+  }
+  /* Estilo de los spans */
+  main header span{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+/* FIN DEL HEADER */
+
+/* COMIENDO DEL NAV */
+
+  /* Estilo de los parrafos (p) */
+  main nav p{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-style: inherit;
+    word-spacing: 1px;
+    line-height: 30px;
+  }
+  /* Estilo de los h3 y h4 de la Calculadora */
+  main nav h3 {
+    margin: 10px 475px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: grey;
+    color: white;
+    -webkit-text-stroke: 0.7px black;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  main nav h4 {
+    margin: 0px 500px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: yellow;
+  }
+
+/* FIN DEL NAV */
+
+/* COMIENZO DEL SECTION */
+
+  /* Estilo del section */
+  main section{
+    background-color: lightslategray;
+    margin: 20px 0px;
+  }
+  /* Estilo divs */
+  main section div{
+    display: inline-block;
+  }
+  main section h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    -webkit-text-stroke: 0.9px black;
+  }
+  /* Estilo de la calculadora */
+  main section .calculadora { 
+    margin: 0px 150px;
+    padding:20px;
+    background-color:#2980b9;
+    width:350px;
+    height:570px;
+    border-radius: 25px;
+    border: 7px solid black;
+  }
+  /* Estilo de los span de la enumeracion */
+  main section div.enumeracion ul li > span{
+    background-color: skyblue;
+    color: black;
+    font-weight: bolder;
+  }
+  main section div.enumeracion ul.segundoUl li{
+    background-color: yellow;
+    text-decoration: none;
+    margin: 10px 0px;
+    list-style: none;
+  }
+  /* Resultado de las operaciones/Pantalla .*/					 
+  main section #textoPantalla { 
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width:300px;
+    height: 100px;
+    line-height: 100px;
+    background-color:white;
+    border-radius: 25px;
+    margin-left: 20px;
+  }
+  /* Botones Normales*/
+  main section .calculadora [type=button] { 
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border: 2px solid black; 
+    margin-left: 5px; 
+  }
+  /* Botones especiales */
+  main section .calculadora p.botonesEspeciales{
+    text-align: right;
+    margin: 0px 9px;
+  }
+  main section .calculadora input.largo { 
+    color: red; 
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+/* FIN DEL SECTION */
+
+/* COMIENZO DEL FOOTER */
+
+  main footer{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 10px 0px;
+    height: 60px;
+  }
+  main footer div input{
+    font-size: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 7px 0px;
+  }
+  main footer div > input:hover {
+    background-color: midnightblue;
+    font-size: 37px;
+  }
+
+  main footer .button:active {
+    background-color: royalblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+/* FIN DEL FOOTER */
+

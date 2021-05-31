@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesCalculadora.css"/>
+    <script src="functionsCalculadora.js"></script>
+
+    <meta name="author" content="Manuel García" />
+    <meta name="copyright" content="Manuel Garcia" />
+    <meta name="keywords" content="SpinningCenter, Spinning Center, spinningcenter, spinning center, tienda de gimnasio, gimnasio spinningcenter gimnasioSpinningCenter gimnasio SpinningCenter, Gimnasio Spinning Center">
+    <meta name="description" content="Gimnasio SpinningCenter">
+
+    <title>Calculadora para calcular tu IMC</title>
+</head>
+<body>
+
+    <main><!-- Comiendo Main -->
+
+        <header><!-- Comiendo Header -->
+
+            <div>
+                <h2>Calculadora de <span>I</span>ndice de <span>M</span>asa <span>C</span>orporal (<span>IMS</span>)</h2>
+            </div>
+
+        </header><!-- Fin Header -->
+
+        <nav><!-- Comiendo Nav -->
+
+            <div><!-- Comienzo div -->
+                <p>
+                    El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, 
+                    y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de 
+                    que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado 
+                    y diabetes.<br>
+                    <br>
+                    Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los 
+                    kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso [kg]/ estatura [m2]). Según el Instituto
+                    Nacional del Corazón, los Pulmones y la Sangre de los Estados Unidos (NHLBI), el sobrepeso se define como un IMC 
+                    de más de 25. Se considera que una persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con 
+                    la calculadora que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en la 
+                    tabla que aparece debajo de la calculadora.
+                </p>
+
+                    <h3>FORMULA PARA CALCULAR TU IMC</h3>
+                    <h4>IMC = peso [kg] / estatura [m2]&sup2;</h4>
+            </div><!-- Fin div -->
+
+        </nav><!-- Fin Nav -->
+
+        <section><!-- Comiendo Section -->
+            <h2>Calculadora Indice de Masa Muscular y Resultados de las Categorias</h2>
+            <div class="calculadora"><!-- Comienzo Calculadora -->
+                <form action="#" name="calculadora" id="calculadora"><!-- Comienzo Form -->
+                
+                    <p id="textoPantalla">0</p>
+                
+                    <p class="botonesEspeciales">
+                        <input type="button" class="largo" value="CE" onclick="borradoParcial()">
+                        <input type="button" class="largo" value="C" onclick="borradoTotal()">
+                        <input type="button" class="largo" id="imagen" value="Retr" onclick="retro()">
+                    </p>
+                
+                    <p>
+                        <input type="button" value="7" onclick="numero('7')">
+                        <input type="button" value="8" onclick="numero('8')">
+                        <input type="button" value="9" onclick="numero('9')">
+                        <input type="button" value="/" onclick="operar('/')">
+                        <input type="button" value="Raiz" onclick="raizc()">
+                    </p>
+                
+                    <p>
+                        <input type="button" value="4" onclick="numero('4')">
+                        <input type="button" value="5" onclick="numero('5')">
+                        <input type="button" value="6" onclick="numero('6')">
+                        <input type="button" value="*" onclick="operar('*')">
+                        <input type="button" value="%" onclick="porcent()">
+                    </p>
+                
+                    <p>
+                        <input type="button" value="1" onclick="numero('1')">
+                        <input type="button" value="2" onclick="numero('2')">
+                        <input type="button" value="3" onclick="numero('3')">
+                        <input type="button" value="-" onclick="operar('-')">
+                        <input type="button" value="1/x" onclick="inve()">
+                    </p>
+                
+                    <p>
+                        <input type="button" value="+/-" onclick="opuest()">
+                        <input type="button" value="0" onclick="numero('0')">
+                        <input type="button" value="." onclick="numero('.')">
+                        <input type="button" value="+" onclick="operar('+')">
+                        <input type="button" value="=" onclick="igualar()">
+                    </p>
+
+                </form><!-- Fin Form -->
+                
+            </div><!-- Fin Calculadora -->
+
+            <div class="enumeracion"><!-- Comienzo Enumeracion -->
+                <ul>
+                    <li> <span class="enum"> &lt; 18.5 </span>
+                        <ul class="segundoUl">
+                            <li>Peso Insuficiente</li>
+                        </ul> 
+                    </li>
+                    <li> <span class="enum">Entre 18.5 y 24.9</span>
+                        <ul class="segundoUl">
+                            <li>Peso normal</li>
+                        </ul> 
+                    </li>
+                    <li> <span class="enum">Entre 25 y 26.9</span>
+                        <ul class="segundoUl">
+                            <li>Sobrepeso grado </li>
+                        </ul> 
+                    </li>
+                    <li> <span class="enum">Entre 27 y 29.9</span>
+                        <ul class="segundoUl">
+                            <li>Sobrepeso grado II (preobesidad)</li>
+                        </ul> 
+                    </li>
+                    <li> <span class="enum">Entre 30 y 34.9</span>
+                        <ul class="segundoUl">
+                            <li>Obesidad de tipo I</li>
+                        </ul> 
+                    </li>
+                    <li> <span class="enum">Entre 35 y 39.9</span>
+                        <ul class="segundoUl">
+                            <li>Obesidad de tipo II</li>
+                        </ul>
+                    </li>
+                    <li> <span class="enum">Entre 40 y 49.9</span>
+                        <ul class="segundoUl">
+                            <li>Obesidad de tipo III (mórbida)</li>
+                        </ul>
+                    </li>
+                    <li> <span class="enum">> 50</span>
+                        <ul class="segundoUl">
+                            <li>Obesidad de tipo II</li>
+                        </ul>   
+                    </li>
+                </ul>
+            </div><!-- Fin Enumeracion -->
+
+        </section><!-- Fin Section -->
+
+        <footer><!-- Comiendo Footer -->
+
+            <div>
+                <input type="button" value="Volver al Menú Principal" onclick="window.location.href='../index.html'">
+            </div>
+
+        </footer><!-- Fin Footer -->
+
+    </main><!-- Comiendo Main -->
+
+</body>
+</html>
