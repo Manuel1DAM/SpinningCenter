@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+
+    <meta name="author" content="Manuel García" />
+    <meta name="copyright" content="Manuel Garcia" />
+    <meta name="keywords" content="SpinningCenter, Spinning Center, spinningcenter, spinning center, tienda de gimnasio, gimnasio spinningcenter gimnasioSpinningCenter gimnasio SpinningCenter, Gimnasio Spinning Center">
+    <meta name="description" content="Gimnasio SpinningCenter">
+
+    <title>Spinning Center</title>
+</head>
+<body onLoad="startclock()">
+
+    <main><!-- COMIENZO Main -->
+        
+        <header><!-- COMIENZO HEADER -->
+
+            <div class="logo"><!--Comienzo Logo-->
+                <img src="img/logo.jpg" alt="logo">
+            </div><!--Fin Logo-->
+
+            <div class="nombreEmpresa"><!-- Comienzo NombreEmpresa -->   
+                
+                <h1>Spinning<span class="letra2">Center</span>
+                    <br>
+                <span class="letra">Gimnasio</span>
+                        
+                </h1>
+            </div><!-- Fin NombreEmpresa -->
+
+        </header><!-- FIN HEADER -->
+
+        <nav><!-- COMIENZO NAV -->
+
+            <div class="marcado">
+                <a href="index.html"><p><span>Página Principal</span></p></a>
+            </div>
+            <div>
+                <a href="productos_servicios.html"><p><span>Productos y Servicios</span></p></a>
+            </div>
+            <div>
+                   <a href="quienes_somos.html"><p>Quienes somos</p></a> 
+            </div>
+            <div>
+                <a href="registro.html"><p>Registro</p></a>
+            </div>
+            <div>
+                <a href="contacto.html"><p>Contactanos</p></a>
+            </div>
+
+        </nav><!-- FIN NAV -->
+
+        <aside><!-- COMIENZO ASIDE -->
+
+            <div class="apartado"><!-- Comienzo MenuRapido -->
+                <div class="menu-item"><!-- Comienzo Div -->
+                    <a href="#interior">Presentación</a>
+                </div><!-- Fin Div -->
+                <div class="menu-item"><!-- Comienzo Div -->
+                    <a href="#horario">Horario</a>
+                </div><!-- Fin Div -->
+                <div class="menu-item"><!-- Comienzo Div -->
+                    <a href="#personal">Personal SpinningCenter</a>
+                </div><!-- Fin Div -->
+                <div class="menu-item"><!-- Comienzo Div -->
+                    <a href="#eventos">Eventos</a>
+                </div><!-- Fin Div -->
+                <div class="menu-item"><!-- Comienzo Div -->
+                    <form name="clock" onSubmit="0">
+                        <p>Hoy es:</p> 
+                        <input type="text" name="thedate" size=12 value="">
+                        <p>La hora es:</p> 
+                        <input type="text" name="face" size=12 value="">
+                    </form>
+                </div><!-- Fin Div -->
+            </div><!-- Fin MenuRapido -->
+            
+        </aside><!-- FIN ASIDE -->
+
+        <section><!-- COMIENZO SECTION -->
+            <h2>Imagenes Multimedia de nuestro Gimnasio</h2>
+            <div class="container" id="interior"><!-- Comiendo Container -->
+                <!-- Comiendo Slider -->
+                <ul class="slider">
+                  <li id="slide1">
+                    <img src="img/slider0.png" alt="foto1">
+                  </li>
+                  <li id="slide2">
+                    <img src="img/slider1.jpg" alt="foto2">
+                  </li>
+                  <li id="slide3">
+                    <img src="img/slider2.jpg" alt="foto3">
+                  </li>
+                  <li id="slide4">
+                    <img src="img/slider3.jpg" alt="foto4">
+                  </li>
+                  <li id="slide5">
+                    <p class="textoSlider">Registrate y Entrena con nosotros</p>
+                    <p>¿A qué estas esperando? Apuntate con nosotros para obtener los mejores resultados de tu propio cuerpo y disfruta de nuestro servicios con la ayuda de nuestro personal.
+                        <br>
+                        <br>
+                        Abajo te dejaremos el link del formulario para que puedas acceder y registrarte y formar parte de nuestra familia.
+                    </p>
+                    <a href="registro.html" class="registro">¡Corre, te esperaremos ansiosamente!</a>
+                  </li>
+                </ul>
+                <!-- Fin Slider -->
+
+                <!-- Comiendo Controladores -->
+                <ul class="menu">
+                  <li>
+                    <a href="#slide1">1</a>
+                  </li>
+                  <li>
+                    <a href="#slide2">2</a>
+                  </li>
+                   <li>
+                    <a href="#slide3">3</a>
+                  </li>
+                  <li>
+                    <a href="#slide4">4</a>
+                  </li>
+                  <li>
+                    <a href="#slide5">5</a>
+                  </li>
+                </ul>
+                <!-- Fin Controladores -->
+            </div><!-- Fin container -->
+
+        </section><!-- FIN SECTION -->
+
+        <section class="main2"><!-- COMIENZO SECTION2 -->
+
+            <h4 id="horario">Este es nuestro Horario que tenemos actualmente para esta fecha del año 20/21</h4>
+            <a href="Zoom/Zoom.html" target="_blank"><img src="img/horarioSpinningCenter.JPG" alt="fotoCalendario"></a>
+
+        </section><!-- FIN SECTION2 -->
+
+        <section class="main3"><!-- COMIENZO SECTION3 -->
+            
+            <div class="card" id="personal"><!-- Comiendo de la tarjeta1 -->
+                <div class="front">
+                    <img src="img/tarjeta.jpg" alt="fondo1" class="imagen1">
+                    <div>
+                        <img src="img/tarjeta1.jpg" alt="tarjeta1" class="imagen2">
+                    </div>
+                        <h4>Carlos Garcia</h4>
+                        <p>Gerente y coordinador técnico de SpinningCenter. Fisioterapeuta e instructor</p>
+                        
+                </div>
+                <div class="back">
+                    <h4>Carlos Garcia</h4>
+                    <p>Fisioterapeuta especialista en fisioterapia del deporte. Máster internacional en ejercicio físico en patologías. 
+                    Certificado en anatomía funcional y ejercicio correctivo. Curso de Ultimate Back, impartido por el Dr. Stuart Mc Gill 
+                    (especialista en espalda). Instructor de fitness, entrenamiento personal y clases colectivas.
+                    Especialización en alimentación y salud. Formador y coautor.
+                    </p>
+                </div>
+            </div><!-- Fin de la tarjeta1 -->
+            
+                
+            <div class="card"><!-- Comiendo de la tarjeta2 -->
+                <div class="front">
+                    <img src="img/tarjeta.jpg" alt="fondo2" class="imagen1">
+                    <div>
+                        <img src="img/tarjeta2.jpg" alt="tarjeta2" class="imagen2">
+                    </div>
+                        <h4>Ana Heras</h4>
+                        <p>Gerente y coordinadora técnica de SpinningCenter. Instructora de Clases y Entrenamientos</p>
+                        
+                </div>
+                <div class="back">
+                    <h4>Ana Heras</h4>
+                    
+                    <p>Licenciada en ciencias de la actividad física y del deporte. Instructora en sala fitness, clases colectivas, piscina y entrenadora personal. Docente.
+                    Técnico en dietética y nutrición. Técnico deportivo en montaña y triatleta de élite - Ironman. 
+                    Corredora de Trail y Cross. Cuarta plaza general en Infinitriman. Campeona de España de Snowrunning.
+                    
+                    Entrenadora especializada en Zumba, Aerostep, Cicloindoor, TRX, Box, Crossfit, Pilates y Tonificacion.
+                    </p>
+                </div>
+            </div><!-- Fin de la tarjeta2 -->
+            
+            
+            <div class="card"><!-- Comiendo de la tarjeta3 -->
+                <div class="front">
+                    <img src="img/tarjeta.jpg" alt="fondo3" class="imagen1">
+                    <div>
+                        <img src="img/tarjeta3.jpg" alt="tarjeta3" class="imagen2">
+                    </div>
+                        <h4>Maria Arevalo</h4>
+                        <p>Fisioterapeuta especializada en fisioterapia activa. Formación en entrenamiento de fuerza</p>
+                        
+                    </div>
+                <div class="back">
+                    <h4>Maria Arevalo</h4>
+                    
+                    <p>Formación en Entrenamiento de Fuerza, Entrenamiento Adaptado y Readaptación. Curso “Dolor y Movimiento” con Arturo Goicoechea. 
+                    Curso “Ecografía para Fisioterapeutas” con Pablo Salvador. 
+                    Curso de Especialización en Nutrición Deportiva con David Marchante, Dr. Álvaro Campillo, Marcos Vázquez y Alfonso Bordallo (Instituto Ciencias de Nutrición y Salud – ICNS).
+                    </p>
+                </div>
+            </div><!-- Fin de la tarjeta3 -->
+
+        </section><!-- FIN SECTION3 -->
+
+        <section class="main4"><!-- COMIENZO SECTION4 -->
+            <h2 class="texto">Para saber tu Indice de Masa Musucular puedes usar nuestra calculadora</h2>
+            <div class="bloque" id="eventos">
+                <div>  
+                    <input type="button" value="CalculadoraIMC" onclick="window.location.href='Calculadora/Calculadora.html'">
+                </div>
+            </div>
+
+        </section><!-- FIN SECTION4 -->
+
+        <footer><!-- COMIENZO FOOTER -->
+
+            <div><!-- Comienzo Div -->
+                <ul>
+                    <li>Numero de Teléfono: (+34) 632 95 68 29</li>
+                    <li>Correo Electrónico: SpinningCentergimnasio@gmail.com</li>
+                    <li>
+                        Redes sociales:
+                        <ul>
+                            <li><a href="https://www.instagram.com/">Instagram<img src="img/logoInstagram.png" alt="Instagram"></a></li>
+                            <li><a href="https://es-es.facebook.com/">Facebook<img src="img/logoFacebook.jpg" alt="Facebook"></a></li>
+                            <li><a href="https://www.youtube.com/">Youtube<img src="img/logoYoutube.jpg" alt="Youtube"></a></li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+           </div><!-- Fin Div -->
+           
+        </footer><!-- FIN FOOTER -->
+
+    </main><!-- FIN Main -->
+
+      <script src="functions.js"></script>
+</body>
+</html>
